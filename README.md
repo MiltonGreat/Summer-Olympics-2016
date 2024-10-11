@@ -4,11 +4,9 @@
 
 #### 1. Overview
 
-This Python code is part of a project aimed at analyzing a dataset related to NBA player performance. The goal of the project is to explore player statistics, identify trends in performance, and visualize key insights using Exploratory Data Analysis (EDA) techniques. The code uses Pandas for data manipulation and Seaborn/Matplotlib for data visualization.
+This project analyzes data from the modern Olympic Games, covering the period from 1896 to 2016. The analysis explores trends in athlete participation, gender representation, top-performing athletes and countries, and the popularity of various Olympic events over time. The goal is to use Exploratory Data Analysis (EDA) to uncover insights into the history and evolution of the Olympic Games.
 
-
-
-Use pandas to answer the following questions, then replicate the given visualizations using Matplotlib and seaborn:
+These are the questions that are explored:
 
     What is the total number of athletes in each game?
     What is the total number of male vs. female athletes in each game?
@@ -21,14 +19,11 @@ Use pandas to answer the following questions, then replicate the given visualiza
 
 #### 2. Data
 
-In this project you will analyze and visualize data on the modern Olympic Games, from the first games in Athens in 1896 to the Summer Olympics of Rio in 2016.
+In this project you will analyze and visualize data on the modern Olympic Games, from the first games in Athens in 1896 to the Summer Olympics of Rio in 2016. The dataset include Summer and Winter Olympics data. You will work with 2 files:
 
-The dataset include Summer and Winter Olympics data. You will work with 2 files:
+- athlete_events.csv: Contains detailed information about athletes, the events they participated in, and the medals they won.
 
-    athlete_events.csv
-    noc_regions.csv
-
-
+- noc_regions.csv: Contains information about National Olympic Committees (NOCs) and their corresponding regions/countries.
 
 #### 3. Data Analysis Steps
 
@@ -39,9 +34,9 @@ The dataset include Summer and Winter Olympics data. You will work with 2 files:
 
 #### 4. Data Cleaning 
 
-- Columns with excessive missing values (e.g., Minutes Per Game, Offensive Rebounds, and Defensive Rebounds) were removed to maintain data quality.
-- Missing values in numerical columns were filled with the column mean.
-- Team names were standardized from abbreviations (e.g., MIL to Milwaukee Bucks).
+- Missing values for key attributes such as Age, Height, and Weight were filled using the mean, grouped by gender (male/female).
+- Missing region data in the noc_regions dataset was filled using the notes column.
+- The athlete and NOC datasets were merged to associate athletes with their respective regions.
 
 #### 5. Data Visualization
 
@@ -54,15 +49,18 @@ The dataset include Summer and Winter Olympics data. You will work with 2 files:
 
 #### 6. Key Findings
       
-Relationship Between Assists and Turnovers: Guards tend to have higher assists but also accumulate more turnovers due to their ball-handling role, as shown in the scatter plot.
+Growth in Athlete Participation: The number of athletes in the Olympics has grown significantly over time, from a few hundred in the early games to over 10,000 in recent years.
 
-Average Assists Per Game by Position: Guards had the highest average assists per game, followed by forwards and centers, as shown in the bar plot.
+Gender Representation: The Olympics have seen a steady increase in female representation, particularly in the latter half of the 20th century. Female participation now approaches parity with male athletes.
 
-Outliers in Assists and Turnovers: Boxplots of assists and turnovers indicate potential outliers in the dataset. These could represent standout performances or data inconsistencies that may need further investigation.
+Top Athletes: Athletes like Michael Phelps and Larisa Latynina stand out as some of the most successful Olympians, having won record numbers of medals.
 
-Correlation Between Player Metrics: The correlation matrix reveals that certain metrics, like points and assists, are positively correlated, suggesting that players who pass the ball effectively may also score more points.
+Top Countries: Countries like the United States, Soviet Union, and Germany have historically dominated the medal tables, winning thousands of Olympic medals.
+
+Age Distribution: Olympic athletes tend to be in their 20s and 30s, but some sports like gymnastics feature younger athletes, while endurance events see a broader age range.
+
+Popular Events: Football, Hockey, and Gymnastics are among the most popular Summer Olympic events, while Ice Hockey and Alpine Skiing dominate the Winter Olympics.
 
 #### 7.  Source
 
-https://www.kaggle.com/datasets/thedevastator/unlocking-the-secrets-of-nba-player-performance
-
+https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
