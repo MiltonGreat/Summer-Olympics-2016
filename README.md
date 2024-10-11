@@ -8,14 +8,14 @@ This project analyzes data from the modern Olympic Games, covering the period fr
 
 These are the questions that are explored:
 
-    What is the total number of athletes in each game?
-    What is the total number of male vs. female athletes in each game?
-    What is the growth rate of female participation over years
-    Who are the top medal winning athletes?
-    Who are the top medal winning countries?
-    What is the age distribution of males vs. females
-    What are the top summer sporting events?
-    What are the top summer sporting events?
+   - What is the total number of athletes in each game?
+   - What is the total number of male vs. female athletes in each game?
+   - What is the growth rate of female participation over years
+   - Who are the top medal winning athletes?
+   - Who are the top medal winning countries?
+   - What is the age distribution of males vs. females
+   - What are the top summer sporting events?
+   - What are the top summer sporting events?
 
 #### 2. Data
 
